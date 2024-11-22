@@ -16,14 +16,26 @@ while ($linha = mysqli_fetch_array($consultaCadastros)) {
     <br><br><br> 
     <form method="post" action="processaEditaCadastro.php" autocomplete="off">
         <input value="<?php echo $linha['id'] ?>" type="text" class="form-control" id="id" name="id" style="display:none;">
+        
         <div class="mb-3">
             <label for="exampleInputText1" class="form-label">Nome</label>
             <input value="<?php echo $linha['nome'] ?>" type="text" class="form-control" id="nome" name="nome" required>
         </div>
+        
+        <!-- Combobox para selecionar a Sala -->
         <div class="mb-3">
             <label for="exampleInputText1" class="form-label">Sala</label>
-            <textarea value="<?php echo $linha['sala'] ?>" type="text" class="form-control" id="sala" name="sala"></textarea>
+            <select id="sala" name="sala" class="form-control" required>
+                <option value="Sala 1" <?php if ($linha['sala'] == 'Sala 1') echo 'selected'; ?>>Sala 1</option>
+                <option value="Sala 2" <?php if ($linha['sala'] == 'Sala 2') echo 'selected'; ?>>Sala 2</option>
+                <option value="Sala 3" <?php if ($linha['sala'] == 'Sala 3') echo 'selected'; ?>>Sala 3</option>
+                <option value="Sala 4" <?php if ($linha['sala'] == 'Sala 4') echo 'selected'; ?>>Sala 4</option>
+                <option value="Sala 5" <?php if ($linha['sala'] == 'Sala 5') echo 'selected'; ?>>Sala 5</option>
+                <option value="Sala 6" <?php if ($linha['sala'] == 'Sala 6') echo 'selected'; ?>>Sala 6</option>
+                <option value="Sala 7" <?php if ($linha['sala'] == 'Sala 7') echo 'selected'; ?>>Sala 7</option>
+            </select>
         </div>
+        
         <div class="mb-3">
             <label for="exampleInputText1" class="form-label">Data</label>
             <input value="<?php echo $linha['data'] ?>" type="date" class="form-control" id="date" name="date" required>

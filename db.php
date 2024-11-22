@@ -6,8 +6,8 @@
 
 $servidor = "localhost";
 $usuario = "root";
-$senha ="";
-$db="testefeed2";
+$senha = "23082006";
+$db="contador";
 
 
 $conexao = mysqli_connect($servidor, $usuario, $senha, $db);
@@ -15,5 +15,5 @@ $conexao = mysqli_connect($servidor, $usuario, $senha, $db);
 $query="select * from cadastros order by nome";
 $consultaCadastros= mysqli_query($conexao, $query);
 
-
+?>
 

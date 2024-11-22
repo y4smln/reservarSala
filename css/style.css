@@ -43,5 +43,211 @@ th, td, tr{
      .sala{
         width: 3000px;
      }
+
 }
- 
+
+/* Estilo geral */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container do formulário */
+.container-form {
+    background-color: white;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px 30px;
+}
+
+/* Título */
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+/* Botão de voltar */
+.btn-back {
+    display: inline-block;
+    color: #555;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.btn-back i {
+    margin-right: 5px;
+}
+
+/* Formulário */
+.form-box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #333;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #009FB7;
+    box-shadow: 0 0 5px #006474;
+}
+
+/* Botão de enviar */
+.btn-submit {
+    padding: 10px;
+    background-color: #009FB7;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #006474;
+}
+
+.img-fluid {
+    width: 60px;
+    height: 60px; /* Preserva a proporção da imagem */
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+/* Estilo para a imagem do ícone */
+.house-icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 50px;
+    cursor: pointer;
+}
+
+/* Estilo para a caixa cinza */
+.menu {
+    position: absolute;
+    top: 70px; /* Ajuste para ficar logo abaixo da casa */
+    left: 10px;
+    background-color: #343a40; /* Cor de fundo cinza */
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    display: none; /* Escondido por padrão */
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin: 5px 0;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.caixa {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: auto;
+}
+
+#pricing_table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+#pricing_table thead th {
+    background-color: #009FB7;
+    padding: 15px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+}
+
+#pricing_table tbody td {
+    padding: 15px;
+    text-align: center;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+#pricing_table tbody tr:nth-child(even) {
+    background-color: #f9fbfd;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn-edit, .btn-delete {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-edit {
+    color: green;
+}
+
+.btn-edit:hover {
+    background-color: #e6f9e6;
+}
+
+.btn-delete {
+    color: red;
+}
+
+.btn-delete:hover {
+    background-color: #ffe6e6;
+}

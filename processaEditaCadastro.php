@@ -4,10 +4,11 @@ include 'db.php';
 
 $id=$_POST['id'];
 $nome = $_POST['nome'];
-$feed = $_POST['feed'];
+$sala = $_POST['sala'];
 $date = $_POST['data'];
+$hora = $_POST['hora'];
 
-$query= "update cadastros set nome='$nome', feed='$feed', data='$date' where id= $id";
+$query= "update cadastros set nome='$nome', sala='$sala', data='$date', hora='$hora' where id= $id";
 
 mysqli_query($conexao, $query);
 
