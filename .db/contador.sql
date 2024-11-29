@@ -54,7 +54,7 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`id_usu`, `usu_login`, `usu_senha`, `usu_tipo`) VALUES
-(1, 'admin', '21232f297a57a5a743894a0e4a801fc3', 1);
+(1, 'admin', 'admin', 1);
 
 --
 -- Índices para tabelas despejadas
