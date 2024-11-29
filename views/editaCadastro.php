@@ -38,7 +38,7 @@ while ($linha = mysqli_fetch_array($consultaCadastros)) {
         
         <div class="mb-3">
             <label for="exampleInputText1" class="form-label">Data</label>
-            <input value="<?php echo $linha['data'] ?>" type="date" class="form-control" id="date" name="date" required>
+            <input value="<?php echo $linha['data'] ?>" type="date" class="form-control" id="data" name="data" required>
         </div>
 
         <div class="mb-3">

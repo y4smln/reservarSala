@@ -6,7 +6,7 @@
 
 $servidor = "localhost";
 $usuario = "root";
-$senha = "23082006";
+$senha = "";
 $db="contador";
 
 
